@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impact Accessibility Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Impact Accessibility Calculator</h1>
+      <p>Enter the total users, percentage with disabilities, and percentage improvement to calculate the positive impact.</p>
+      <div class="toggle-container">
+        <span class="toggle-label">Dark Mode</span>
+        <label class="switch">
+          <input type="checkbox" id="darkToggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </header>
+
+    <div class="card">
+      <div class="input-container">
+        <input type="number" id="totalUsers" placeholder="Enter total users">
+        <span class="inline-label" id="totalUsersLabel"></span>
+        <p class="error-msg"></p>
+      </div>
+
+      <div class="input-container">
+        <input type="number" id="disabilityPercent" placeholder="Enter disability %">
+        <span class="inline-label" id="disabilityLabel"></span>
+        <p class="error-msg"></p>
+      </div>
+
+      <div class="input-container">
+        <input type="number" id="improvementPercent" placeholder="Enter improvement %">
+        <span class="inline-label" id="improvementLabel"></span>
+        <p class="error-msg"></p>
+      </div>
+
+      <button id="calculateBtn">Calculate Impact</button>
+    </div>
+
+    <div class="result-card" id="resultCard">
+      <h2>Estimated Positive Impact</h2>
+      <p id="resultText">Enter values to calculate impact.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
